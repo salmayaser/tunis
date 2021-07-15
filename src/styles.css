@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+ }
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+mat-form-field{
+  width: 100%;
+}
+mat-label{
+font-weight: 900;
+color: black;
+}
+.mat-form-field-appearance-fill .mat-form-field-flex{
+  background-color: transparent;
+ box-shadow: 1px 2px 2px 1px #f3f1f2;
+  border-radius: 20px;
+  padding:0px 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.mat-form-field-appearance-fill.mat-form-field-disabled .mat-form-field-flex{
+  background-color: transparent;
+  box-shadow: 1px 2px 2px 1px #f3f1f2;
+
+   cursor: pointer;
+   color: black;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-bottom: 1px solid #8f9194;
+}
+.mat-form-field-appearance-fill.mat-form-field-disabled .mat-form-field-flex:hover{
+
+   border-bottom: 2px solid #000;
+}
+.mat-form-field-prefix .mat-icon, .mat-form-field-suffix .mat-icon{
+  color: #8f9194;
+
+}
+input.mat-input-element {
+
+  color: #000;
+  font-weight: 900;
+text-align: center;
+}
+
+.mat-input-element:disabled, .mat-form-field-type-mat-native-select.mat-form-field-disabled .mat-form-field-infix::after{
+  color: #000;
+  font-weight: 900;
+}
+a{
+  text-decoration: none !important;
+}

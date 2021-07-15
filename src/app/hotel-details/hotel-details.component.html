@@ -1,0 +1,147 @@
+<div class="single-hotel-container">
+  <app-navbar></app-navbar>
+  <div class="container mt-5 mb-5 single-hotel-header">
+    <div class="row header">
+      <div class="d-flex col-md-6">
+        <h2 class=" ml-1">Gold Plaza Hotel</h2>
+        <div class="first-icon1 ml-1">
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="second d-flex">
+      <mat-icon>wc</mat-icon>
+      <h6 class="pl-2 p-1 rounded">Great For Two Travelers</h6>
+
+    </div>
+
+
+
+    <div class="row justify-content-between">
+      <div class="col-md-7 pr-0 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../../assets/images/hotel.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../../assets/images/GettyImages-182131556_master.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../../assets/images/wadi-elrayan.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+        <div class="description">
+          <h2>About Hotel</h2>
+          <hr>
+          <p class="text-muted">Praesent eros turpis, commodo vel justo at, pulvinar mollis eros. Mauris aliquet eu
+            quam id ornare. Morbi
+            ac quam enim. Cras vitae nulla condimentum, semper dolor non, faucibus dolor. Vivamus adipiscing eros quis
+            orci fringilla, sed pretium lectus viverra. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Donec nec velit non odio aliquam suscipit. Sed non neque faucibus,
+            condimentum lectus at, accumsan enim. Fusce pretium egestas cursus. Etiam consectetur, orci vel rutrum
+            volutpat, odio odio pretium nisiodo tellus libero et urna. Sed commodo ipsum ligula, id volutpat risus
+            vehicula in. Pellentesque non massa eu nibh posuere bibendum non sed enim. Maecenas lobortis nulla sem, vel
+            egestas .
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis
+            pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt.
+            Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus
+            feugiat. In fermentum facilisis massa, a consequat .</p>
+
+          <hr>
+          <h2>Facilities</h2>
+          <div class="facilities">
+            <a title="wifi">
+              <mat-icon>wifi</mat-icon>
+            </a>
+
+            <mat-icon>pets</mat-icon>
+            <mat-icon>restaurant</mat-icon>
+            <mat-icon>desktop_windows</mat-icon>
+            <mat-icon>ac_unit</mat-icon>
+            <mat-icon>bathtub</mat-icon>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="col-md-5 left">
+        <div class="book-container">
+          <h2>Book This Hotel</h2>
+          <hr>
+          <div class="form-group">
+
+            <mat-form-field appearance="fill">
+              <mat-label>Room Type</mat-label>
+              <mat-select>
+                <mat-option value="one">Single Room</mat-option>
+                <mat-option value="two">Double Room</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <mat-form-field appearance="fill">
+            <mat-label>Check In / Check Out</mat-label>
+            <mat-date-range-input [rangePicker]="picker">
+              <input matStartDate>
+              <input matEndDate>
+            </mat-date-range-input>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+
+            <mat-icon matPrefix (click)="removeAdult()">remove</mat-icon>
+            <input disabled class="members-input" matInput value="{{adults}} Adults">
+            <mat-icon matSuffix (click)="addAdult()">add</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" appearance="fill">
+
+            <mat-icon matPrefix (click)="removeAdult()">remove</mat-icon>
+            <input disabled class="members-input" matInput value="{{adults}} Adults">
+            <mat-icon matSuffix (click)="addAdult()">add</mat-icon>
+          </mat-form-field>
+          <button class="btn ">Book Now</button>
+        </div>
+        <div class="map">
+          <div class="overlay">
+            <a class="btn">Show On Map </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <app-rooms></app-rooms>
+  </div>
+</div>
+<app-footer></app-footer>

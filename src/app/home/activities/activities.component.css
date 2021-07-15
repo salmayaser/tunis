@@ -1,0 +1,49 @@
+.activities{
+  margin: 100px 0px;
+}
+.activities h1{
+  text-align: center;
+  font-size: 30px;
+  color: #243256;
+  font-weight: 600;
+}
+.activities h3{
+  color: #243256;
+}
+
+/* extra small */
+
+@media (max-width: 575.98px) {
+
+  .activities{
+    margin: 70px 20px;
+  }
+  .activities h1{
+    text-align: center;
+    font-size: 20px;
+    color: #243256;
+    font-weight: 600;
+  }
+  .activities h3{
+    font-size: 15px;
+  }
+  .activities p{
+    font-size: 14px;
+  }
+
+
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {  }

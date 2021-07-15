@@ -1,0 +1,93 @@
+
+.search-item{
+  /* background-color: #fff; */
+  /* box-shadow: 0px 0px 35px -17px grey; */
+  padding: 20px;
+  overflow: hidden;
+}
+
+
+
+.search-image{
+  width:20%;
+  position: relative;
+  float: left;
+
+}
+.search-image img{
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+  .search-content{
+    width: 80%;
+    float: left;
+    padding: 0px 20px;
+  }
+.search-content h5{
+  color: #70b9e4;
+  font-size: 16px;
+  font-weight: 600;
+}
+.map-item{
+  color: gray;
+}
+.location-container{
+  display: flex;
+}
+.location-container mat-icon{
+  font-size: 17px;
+  color: #f9b90f;
+}
+.facilities{
+  color: #bec5ca;
+}
+.facilities mat-icon{
+  margin: 0px 5px;
+  font-size: 20px;
+}
+.search-header{
+  display: flex;
+  justify-content: space-between;
+}
+.btn-prices{
+  background-color: #0f3bb9;
+  color: #fff;
+  float: right;
+}
+
+.rooms{
+  margin-top: 30px;
+  /* background-color: #fff;
+  box-shadow: 0px 0px 12px 5px gainsboro; */
+  padding: 20px;
+}
+.rooms h2{
+  color: #0f3bb9;
+}
+.room-header{
+  display: flex;
+  justify-content: space-between;
+}
+.room-header h3{
+  color: #0f3bb9;
+  font-weight: 600;
+}
+.room{
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0px 0px 12px 5px gainsboro;
+}
+.room  .img-container{
+  width: 20%;
+  float: left;
+}
+.room .content-container{
+  float: left;
+  width: 80%;
+}

@@ -1,0 +1,95 @@
+
+.navbar-brand img{
+  width: 200px;
+  margin-left: 40px;
+}
+.nav-item{
+  margin: 20px 25px
+}
+.nav-link{
+  font-size: 17px;
+  color: #0f3bb9;
+  font-weight: 600;
+}
+.btn-login{
+  border: 1px solid #0f3bb9;
+  margin-right: 10px;
+  color: #0f3bb9;
+  font-weight: 600;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.btn-register{
+  background-color: #0f3bb9;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.navbar-toggler{
+  border: none;
+  outline: none !important;
+}
+.btn-login:hover{
+  background-color: #0f3bb9;
+  color: #fff;
+}
+.btn-register:hover{
+  background-color: transparent;
+  border: 1px solid #0f3bb9;
+  color: #0f3bb9;
+}
+
+
+/* extra small */
+
+@media (max-width: 575.98px) {
+
+.navbar-brand img{
+  width: 150px;
+  margin-left: 2px;
+}
+.nav-item{
+  margin: 5px 20px
+}
+
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .navbar-brand img{
+    width: 150px;
+    margin-left: 2px;
+  }
+  .nav-item{
+    margin: 5px 20px
+  }
+
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .navbar-brand img{
+    width: 150px;
+    margin-left: 2px;
+  }
+  .nav-item{
+    margin: 5px 20px
+  }
+
+  }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {  }

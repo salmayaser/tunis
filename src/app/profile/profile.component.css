@@ -1,0 +1,41 @@
+.setting{
+  background: rgb(242,247,255);
+  background: linear-gradient(180deg, rgba(242,247,255,1) 29%, rgba(255,255,255,1) 58%, rgba(255,255,255,1) 100%);
+  width: 100%;
+}
+
+
+.list-group {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.setting .card .list-group-item i {
+  margin-right: 10px;
+}
+.setting h5 {
+  color: #243256;
+}
+.setting .info {
+  color: gray;
+}
+.setting table p.name {
+  font-weight: bold;
+}
+.setting table span.email {
+  font-weight: bold;
+}
+.setting table span.verified {
+  background-color: green;
+  color: #f5f8ff;
+}
+.setting table .btn {
+  color: #0f3bb9;
+}
+.setting h2{
+color: #0f3bb9;
+}
+@media (max-width: 991px) {
+  .setting .card {
+    display: none;
+  }
+}
