@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
+  loader = true
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.loader = false
+    }, 3000);
+
   }
 
 }

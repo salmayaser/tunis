@@ -23,6 +23,13 @@ export class ApisService {
   getProfile() {
     return this._http.get(`${this.base}/Api/Account/GetProfile`)
   }
+  getPopularHotels() {
+    return this._http.get(`${this.base}/Api/Hotels/GetTopRatedHotels`)
+  }
+  getHotelDetails(hotelId: number) {
+    return this._http.get(`${this.base}/Api/Hotels/GetHotelById?HotelId=${hotelId}`)
+  }
+
 
 
 }

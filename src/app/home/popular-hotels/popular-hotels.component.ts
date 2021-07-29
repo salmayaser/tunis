@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Hotel } from './../../shared/hotel.model';
+import { ApisService } from 'src/app/_services/apis.service';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+
+
 
 @Component({
   selector: 'app-popular-hotels',
@@ -8,7 +12,11 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class PopularHotelsComponent implements OnInit {
 
-  constructor() { }
+  hotels?: Hotel[];
+
+  constructor(private _apis: ApisService) {
+    this.getPopularHotels()
+  }
 
   customOptions: OwlOptions = {
     loop: true,
@@ -34,6 +42,14 @@ export class PopularHotelsComponent implements OnInit {
       }
     },
     nav: true
+  }
+
+  getPopularHotels() {
+    this._apis.getPopularHotels().subscribe((hotels: any) => {
+      this.hotels = hotels.data
+      console.log(Hotel)
+
+    })
   }
 
 

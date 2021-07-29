@@ -1,0 +1,92 @@
+
+.not-found-container{
+  background-color: #2c82c6;
+  position: relative;
+  overflow: hidden;
+}
+.cloud1 {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 0px;
+  animation:cloud_one 50s linear infinite;
+  -webkit-animation:cloud_one 50s linear infinite;
+}
+@keyframes cloud_one {
+  0% {
+    left: 0
+  }
+50% {
+    left: 50%
+  }
+  100%{
+    left: 100%;
+  }
+}
+.cloud1 img {
+  width: 100px;
+}
+.cloud2 {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: 10%;
+  animation:cloud_two 50s linear infinite;
+  -webkit-animation:cloud_two 50s linear infinite;
+}
+.cloud2 img {
+  width: 100px;
+}
+@keyframes cloud_two {
+  0% {
+    right: 0
+  }
+50% {
+    right: 50%
+  }
+  100%{
+    right: 100%;
+  }
+}
+.not-found{
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error{
+text-align: center;
+color: #fff;
+}
+.error h1{
+  font-size: 134px;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 10px;
+  z-index: 100;
+  position: relative;
+}
+.error p{
+  color: rgba(255,255,255,0.91);
+    font-size: 16px;
+    margin-top: 70px;
+    font-weight: 600;
+}
+.error a{
+  margin-top: 20px;
+  color: #F9B90F;
+  border: 2px solid #F9B90F;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.bg{
+  background-image: url('../../assets/images/city.png');
+}
+
+
+
+

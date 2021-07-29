@@ -1,0 +1,31 @@
+.rate {
+  background: #18458B;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px 5px 5px 0;
+  padding: 12px;
+  float: right;
+  box-shadow: 0px 0px 0px 3px rgb(255 255 255 / 20%);
+  -webkit-border-radius: 5px 5px 5px 0;
+  -moz-border-radius: 5px 5px 5px 0;
+  -ms-border-radius: 5px 5px 5px 0;
+  -o-border-radius: 5px 5px 5px 0;
+}
+
+.comment-container img{
+width: 100px;
+text-align: center;
+}
+.comment-container h5{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.comment{
+  /* background-color: #f2f7ff; */
+  padding: 10px;
+}
+.reviews-header{
+  color: #18458B;
+}

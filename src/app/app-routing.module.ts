@@ -1,5 +1,4 @@
-import { AddActiviyComponent } from './admin/add-activiy/add-activiy.component';
-
+import { NotFoundComponent } from './not-found/not-found.component';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PasswordCodeComponent } from './password-code/password-code.component';
@@ -21,7 +20,7 @@ const routes: Routes = [
   { path: 'code', component: PasswordCodeComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'hotel', component: HotelDetailsComponent },
-  { path: 'add-activity', component: AddActiviyComponent },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({

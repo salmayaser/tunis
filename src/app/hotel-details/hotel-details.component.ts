@@ -1,3 +1,5 @@
+import { Hotel } from './../shared/hotel.model';
+import { ApisService } from 'src/app/_services/apis.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotelDetailsComponent implements OnInit {
 
-  constructor() { }
   adults = 1
   children = 0
+  hotel: any
+
+  constructor(private _apis: ApisService) {
+    this.getHotelDetails()
+
+  }
+
 
   addAdult() {
     if (this.adults < 30) {
@@ -31,6 +39,14 @@ export class HotelDetailsComponent implements OnInit {
     if (this.children !== 0) {
       this.children--
     }
+  }
+
+
+  getHotelDetails() {
+    this._apis.getHotelDetails(13).subscribe((hotel: any) => {
+      this.hotel = hotel.data
+      console.log(this.hotel)
+    })
   }
 
 

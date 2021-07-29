@@ -7,17 +7,18 @@
     </div>
     <h1>Popular Hotels In Al Fayoum</h1>
     <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide>
+      <ng-template carouselSlide *ngFor="let hotel of hotels">
         <a>
           <div class="card">
             <div class="card-image-container">
-              <img src="../../../assets/images/hotel.jpg" class="card-img-top" alt="...">
+              <img src="http://pixelserver-001-site11.ctempurl.com/images/{{hotel.mainImage}}" class="card-img-top"
+                alt="{{hotel.nameEn}}">
 
               <div class="rate">
 
 
-                <span class="rate-number">4.5</span>
-                <span class="score">Very Good</span>
+                <span class="rate-number">{{hotel.rate|round}}</span>
+                <span class="score">Rate:</span>
 
               </div>
             </div>
@@ -25,186 +26,16 @@
             <div class="card-body">
               <h3 class="card-title">
                 <a>
-                  Gold Plaza Hotel
+                  {{hotel.nameEn}}
                 </a>
 
               </h3>
 
-              <p class="card-text text-muted">Some quick example text to build on the card title and make up the....</p>
+              <p class="card-text text-muted">{{hotel.discriptionEn|slice}}</p>
               <div class="facilities">
-                <mat-icon>wifi</mat-icon>
-                <mat-icon>pets</mat-icon>
-                <mat-icon>restaurant</mat-icon>
-              </div>
-
-            </div>
-          </div>
-        </a>
-      </ng-template>
-      <ng-template carouselSlide>
-        <a>
-          <div class="card">
-            <div class="card-image-container">
-              <img src="../../../assets/images/hotel.jpg" class="card-img-top" alt="...">
-
-              <div class="rate">
-
-
-                <span class="rate-number">4.5</span>
-                <span class="score">Very Good</span>
-
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">
-                <a>
-                  Gold Plaza Hotel
-                </a>
-
-              </h3>
-
-              <p class="card-text text-muted">Some quick example text to build on the card title and make up the....</p>
-              <div class="facilities">
-                <mat-icon>wifi</mat-icon>
-                <mat-icon>pets</mat-icon>
-                <mat-icon>restaurant</mat-icon>
-              </div>
-
-            </div>
-          </div>
-        </a>
-      </ng-template>
-      <ng-template carouselSlide>
-        <a>
-          <div class="card">
-            <div class="card-image-container">
-              <img src="../../../assets/images/hotel.jpg" class="card-img-top" alt="...">
-
-              <div class="rate">
-
-
-                <span class="rate-number">4.5</span>
-                <span class="score">Very Good</span>
-
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">
-                <a>
-                  Gold Plaza Hotel
-                </a>
-
-              </h3>
-
-              <p class="card-text text-muted">Some quick example text to build on the card title and make up the....</p>
-              <div class="facilities">
-                <mat-icon>wifi</mat-icon>
-                <mat-icon>pets</mat-icon>
-                <mat-icon>restaurant</mat-icon>
-              </div>
-
-            </div>
-          </div>
-        </a>
-      </ng-template>
-      <ng-template carouselSlide>
-        <a>
-          <div class="card">
-            <div class="card-image-container">
-              <img src="../../../assets/images/hotel.jpg" class="card-img-top" alt="...">
-
-              <div class="rate">
-
-
-                <span class="rate-number">4.5</span>
-                <span class="score">Very Good</span>
-
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">
-                <a>
-                  Gold Plaza Hotel
-                </a>
-
-              </h3>
-
-              <p class="card-text text-muted">Some quick example text to build on the card title and make up the....</p>
-              <div class="facilities">
-                <mat-icon>wifi</mat-icon>
-                <mat-icon>pets</mat-icon>
-                <mat-icon>restaurant</mat-icon>
-              </div>
-
-            </div>
-          </div>
-        </a>
-      </ng-template>
-      <ng-template carouselSlide>
-        <a>
-          <div class="card">
-            <div class="card-image-container">
-              <img src="../../../assets/images/hotel.jpg" class="card-img-top" alt="...">
-
-              <div class="rate">
-
-
-                <span class="rate-number">4.5</span>
-                <span class="score">Very Good</span>
-
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">
-                <a>
-                  Gold Plaza Hotel
-                </a>
-
-              </h3>
-
-              <p class="card-text text-muted">Some quick example text to build on the card title and make up the....</p>
-              <div class="facilities">
-                <mat-icon>wifi</mat-icon>
-                <mat-icon>pets</mat-icon>
-                <mat-icon>restaurant</mat-icon>
-              </div>
-
-            </div>
-          </div>
-        </a>
-      </ng-template>
-      <ng-template carouselSlide>
-        <a>
-          <div class="card">
-            <div class="card-image-container">
-              <img src="../../../assets/images/hotel.jpg" class="card-img-top" alt="...">
-
-              <div class="rate">
-
-
-                <span class="rate-number">4.5</span>
-                <span class="score">Very Good</span>
-
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title">
-                <a>
-                  Gold Plaza Hotel
-                </a>
-
-              </h3>
-
-              <p class="card-text text-muted">Some quick example text to build on the card title and make up the....</p>
-              <div class="facilities">
-                <mat-icon>wifi</mat-icon>
-                <mat-icon>pets</mat-icon>
-                <mat-icon>restaurant</mat-icon>
+                <mat-icon [ngClass]="{'active':hotel.hasSeaView}">water</mat-icon>
+                <mat-icon [ngClass]="{'active':hotel.hasSeaView}">pets</mat-icon>
+                <mat-icon [ngClass]="{'active':hotel.hasSeaView}">restaurant</mat-icon>
               </div>
 
             </div>

@@ -57,6 +57,7 @@ h3{
 }
 .card-image-container img {
   transition: all 2000ms;
+  height: 250px;
   -webkit-transition: all 2000ms;
   -moz-transition: all 2000ms;
   -ms-transition: all 2000ms;
@@ -125,3 +126,6 @@ color: #fff;
    margin: 0px 5px;
    font-size: 20px;
  }
+.active{
+  color: #0f3bb9;
+}

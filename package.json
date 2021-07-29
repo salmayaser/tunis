@@ -23,12 +23,9 @@
     "@angular/router": "~11.2.3",
     "@kolkov/angular-editor": "^1.2.0",
     "bootstrap": "^5.0.2",
-    "ngx-editor": "^10.1.0",
     "ngx-owl-carousel-o": "^6.0.0",
     "popper.js": "^1.16.1",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.11.3"
+    "rxjs": "~6.6.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.2",
